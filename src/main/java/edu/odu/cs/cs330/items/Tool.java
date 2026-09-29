@@ -122,7 +122,11 @@ public class Tool extends Equippable {
         Tool rhsItem = (Tool) rhs;
 
         // Replace the return
-        return false;
+        return this.getName().equals(rhsItem.getName())&&
+            this.getSpeed()==rhsItem.getSpeed()&&
+            this.getMaterial().equals(rhsItem.getMaterial())&&
+            this.getModifier().equals(rhsItem.getModifier())&&
+            this.getModifierLevel()==rhsItem.getModifierLevel();
     }
 
     /**
