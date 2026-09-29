@@ -148,7 +148,12 @@ public class Armour extends Equippable {
     public int hashCode()
     {
         // Replace this return
-        return -1;
+         return this.getName().hashCode() +
+             this.getMaterial().hashCode() +
+             this.getModifier().hashCode()+
+             this.getModifierLevel()+
+             this.getElement().hashCode()+
+             this.getDefense();
     }
 
     /**
