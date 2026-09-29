@@ -137,7 +137,11 @@ public class Tool extends Equippable {
     public int hashCode()
     {
         // Replace the return
-        return -1;
+        return this.getName().hashCode()+
+            this.getSpeed()+
+            this.getMaterial().hashCode()+
+            this.getModifier().hashCode()+
+            this.getModifierLevel();
     }
 
     /**
