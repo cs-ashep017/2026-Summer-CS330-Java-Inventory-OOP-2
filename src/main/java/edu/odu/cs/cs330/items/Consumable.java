@@ -100,7 +100,7 @@ public class Consumable extends Item {
     public int requiredNumberOfValues()
     {
         // What is the correct return value?
-        return -1;
+        return 3;
     }
 
     @Override
