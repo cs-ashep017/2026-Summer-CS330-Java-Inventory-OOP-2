@@ -157,7 +157,7 @@ public class Consumable extends Item {
     public int hashCode()
     {
         // Replace the return
-        return -1;
+        return this.getName().hashCode()+this.getEffect().hashCode();
     }
 
     /**
