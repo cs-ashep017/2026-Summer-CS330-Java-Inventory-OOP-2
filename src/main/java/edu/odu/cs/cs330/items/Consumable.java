@@ -167,6 +167,9 @@ public class Consumable extends Item {
     public String toString()
     {
         // Use String.format and the provided FMT_STR
-        return "  Not Implemented";
+        return String.format(FMT_STR,
+                this.getName(),
+                this.getEffect(),
+                this.getNumberOfUses());
     }
 }
