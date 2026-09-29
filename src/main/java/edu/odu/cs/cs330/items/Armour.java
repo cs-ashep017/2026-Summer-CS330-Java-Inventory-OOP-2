@@ -127,6 +127,15 @@ public class Armour extends Equippable {
         Armour rhsItem = (Armour) rhs;
 
         // Replace this return
+         if (this.getName().equals(rhsItem.getName()) &&
+                    this.getMaterial().equals(rhsItem.getMaterial()) &&
+                    this.getModifier().equals(rhsItem.getModifier()) &&
+                    this.getModifierLevel() == rhsItem.getModifierLevel() &&
+                    this.getElement().equals(rhsItem.getElement()) &&
+                    this.getDefense() == rhsItem.getDefense())
+        {
+            return true;
+        }
         return false;
 
     }
