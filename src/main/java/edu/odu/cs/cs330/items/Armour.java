@@ -163,7 +163,13 @@ public class Armour extends Equippable {
     public String toString()
     {
         // Use String.format and the provided FMT_STR
-        return "  Not Implemented";
+        return String.format(FMT_STR,this.getName(),
+                this.getDurability(),
+                this.getDefense(),
+                this.getMaterial(),
+                this.getModifier(),
+                this.getModifierLevel(),
+                this.getElement());
     }
 }
 
