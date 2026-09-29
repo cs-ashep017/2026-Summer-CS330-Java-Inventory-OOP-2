@@ -151,6 +151,12 @@ public class Tool extends Equippable {
     public String toString()
     {
         // Use String.format and the provided FMT_STR
-        return "  Not Implemented";
+        return String.format(FMT_STR,
+                this.getName(),
+                this.getDurability(),
+                this.getSpeed(),
+                this.getMaterial(),
+                this.getModifier(),
+                this.getModifierLevel());
     }
 }
