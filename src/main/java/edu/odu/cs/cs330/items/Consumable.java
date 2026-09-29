@@ -109,6 +109,8 @@ public class Consumable extends Item {
         this.setName(tokens[0]);
 
         // Complete this method.
+        this.setEffect(tokens[1]);
+        this.setNumberOfUses(Integer.parseInt(tokens[2]));
     }
 
     /**
@@ -118,7 +120,6 @@ public class Consumable extends Item {
     public Item clone()
     {
         Consumable cpy = new Consumable();
-        
         // Add the missing logic
 
         return cpy;
