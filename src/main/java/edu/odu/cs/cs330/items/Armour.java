@@ -80,6 +80,14 @@ public class Armour extends Equippable {
         this.setName(tokens[0]);
 
         // Add the missing lines
+        this.setMaterial(tokens[1]);
+        this.setDurability(Integer.parseInt(tokens[2]));
+        this.setDefense(Integer.parseInt(tokens[3]));
+        this.setModifier(tokens[4]);
+        this.setModifierLevel(Integer.parseInt(tokens[5]));
+        this.setElement(tokens[6]);
+
+
 
     }
 
