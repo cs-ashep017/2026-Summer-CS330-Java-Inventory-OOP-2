@@ -121,6 +121,9 @@ public class Consumable extends Item {
     {
         Consumable cpy = new Consumable();
         // Add the missing logic
+        cpy.setName(this.getName());
+        cpy.setEffect(this.getEffect());
+        cpy.setNumberOfUses(this.getNumberOfUses());
 
         return cpy;
     }
